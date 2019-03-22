@@ -1,0 +1,337 @@
+@font-face {
+  font-family:'DancingScript';
+  src:url('DancingScript.otf');
+}
+
+
+body {
+
+margin: 0;
+margin-bottom:0;
+  font-family: 'DancingScript';
+}
+
+
+header{
+background-color: #5b7989;
+text-align:left;
+width: 100%;
+top: 0;
+padding-top: 40px;
+padding-bottom:5px;
+color: white;
+border-radius:10px;
+
+}
+#imagen_central{
+background-color:#82c3a6;
+width: 100%;
+height: 90%;
+
+}
+
+#imagen_central img {
+
+width: 90%;
+height:70%;
+padding-left: 5%;
+padding-top: 2%;
+padding-bottom:2%;
+}
+
+.secundaria {
+  background-color:#d5c75f;
+  display: flex;
+  flex-direction:row;
+width: 100%;
+height: 40%;
+text-align: center;
+font-size: 15px;
+
+
+}
+
+
+#imagen_Secundaria .secundaria >div{
+
+  padding-left: 15px;
+  padding-top: 3%;
+  margin: 10px;
+  background-color:#d5c75f;
+  width: 50%;
+  text-align: center;
+
+}
+
+
+
+.footer {
+
+  background-color:#C6d5c5;
+  width:100%;
+  height: 90%;
+  padding-top:10px;
+
+}
+
+#clics{
+
+padding-left: 70%;
+text-align: center;
+font-size: 15px;
+
+}
+
+
+.contenido{
+  display: flex;
+  flex-direction:row;
+  width: 100%;
+  height: 20%;
+
+
+}
+
+#contenedor .contenido >div{
+  padding-left: 50px;
+  padding-top: 3%;
+  padding-right: 50px
+  margin: 10px;
+  width: 25%;
+
+}
+
+a[href],
+a[href:"link"]
+img[src|=-"icono"] /*el simbolo indica el tipo de buscqueda dle filto ,~~,|- */
+
+.footer >img{
+
+  border-radius: 20px;
+}
+a[href]
+{
+color:white;
+font-size: 15px;
+}
+
+#imagen_1 img{
+  box-shadow:5px 5px ;
+	transition-property: border;
+	transition-duration: 0.5s;
+width: 100%;
+height: 60%;
+
+}
+
+#imagen_1 img:hover{
+
+  transform: rotate(10deg);
+  transition-duration: 2s;
+
+}
+
+#imagen_2 img{
+ box-shadow:5px 5px;
+transition-property:all;
+width: 100%;
+height: 60%;
+}
+
+#imagen_2 img:hover{
+
+
+  border:2px;
+  transition-duration: 1s;
+  transform: translate3d(20px,-5px,0px);
+}
+
+
+
+
+ /*+++++++++++++++pagina 2 y 3++++++++++++++++++++++++*/
+
+
+
+ .contenido_x1{
+   background-color:#82c3a6;
+   display: flex;
+   flex-direction:row;
+ width: 100%;
+ text-align: center;
+ font-size: 15px;
+
+
+ }
+
+
+ #Contenido_1 .contenido_x1 >div{
+
+   padding-left: 10px;
+   padding-top: 3%;
+   margin: 10px;
+   background-color:#82c3a6;
+   width: 33%;
+   text-align: center;
+
+ }
+
+ .contenido_x2{
+   background-color:#d5c75f;
+   display: flex;
+   flex-direction:row;
+ width: 100%;
+ text-align: center;
+ font-size: 15px;
+
+
+ }
+
+
+ #Contenido_2 .contenido_x2 >div{
+
+   padding-left: 10px;
+   padding-top: 3%;
+   margin: 10px;
+   background-color:#d5c75f;
+   width: 33%;
+   text-align: center;
+
+ }
+ #Contenido_2 .contenido_x2  >div >img{
+
+
+   margin: 2px;
+   background-color:#d5c75f;
+   width: 90% ;
+   height: 90%;
+   border-radius: 5px;
+ }
+
+ #Contenido_1 .contenido_x1  >div >img{
+
+
+   margin: 2px;
+   background-color:#d5c75f;
+   width: 90% ;
+   height: 90%;
+   border-radius: 5px;
+ }
+
+#central img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+
+#izquierda2 img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+#derecha2 img{
+
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  filter: grayscale(100%);
+}
+
+#izquierda img{
+  -webkit-filter: blur(10px); /* Chrome, Safari, Opera */
+  filter: blur(10px);
+
+}
+#derecha img{
+  -webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+  filter: sepia(90%);
+
+}
+
+
+/*+++++++++++++Web reponsive for movil pagina principal+++++++++++++++++++++++*/
+
+@media all and (max-width: 600px){
+
+.header{
+  width: 100%;
+  order: 1;
+  text-align: center;
+}
+
+#clics{
+padding-left: 0%;
+  width: 100%;
+  order:6;
+
+}
+
+.imagen_central{
+
+  width: 100%;
+  order: 2;
+}
+
+.secundaria{
+  display: flex;
+  flex-direction:column;
+
+}
+#imagen_Secundaria .secundaria >div{
+
+  padding-left: 0%;
+  padding-top: 0%;
+  width: 100%;
+  text-align: center;
+
+}
+
+.contenido{
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+
+}
+
+#contenedor .contenido >div{
+
+text-align: center;
+padding-left: 30%;
+
+}
+/*----pagina2y 3---------+*/
+.contenido_x1{
+  padding-left: 0%;
+  display: flex;
+  flex-direction:column;
+width: 100%;
+
+}
+
+
+#Contenido_1 .contenido_x1 >div{
+padding-left: 0%;
+  width: 100%;
+
+  order: 2;
+
+}
+
+.contenido_x2{
+padding-left: 0%;
+display: flex;
+flex-direction:column;
+width: 100%;
+
+}
+
+#Contenido_2 .contenido_x2 >div{
+
+padding-left: 0%;
+  width: 100%;
+  text-align: center;
+  order: 3;
+
+}
+
+}
